@@ -1,0 +1,18 @@
+import i32 open(const utf8 *pathname, i32 flags, mode_t mode);
+import i32 close(i32 fd);
+import i32 read(i32 fd, void *buf, i32 count);
+import i32 write(i32 fd, void *buf, i32 count);
+import i64 lseek(i32 fd, i64 offset, i32 whence);
+import i32 stat(const utf8 *pathname, void *statbuf);
+import i32 fstat(i32 fd, void *statbuf);
+import i32 lstat(const utf8 *pathname, void *statbuf);
+import i32 unlink(const utf8 *pathname);
+import i32 rename(const utf8 *oldpath, const utf8 *newpath);
+import i32 mkdir(const utf8 *pathname, mode_t mode);
+import i32 rmdir(const utf8 *pathname);
+import i32 chmod(const utf8 *pathname, mode_t mode);
+import i32 truncate(const utf8 *pathname, i64 length);
+import void *mmap(void *addr, i64 length, i32 prot, i32 flags, i32 fd, i64 offset);
+import i32 munmap(void *addr, i64 length);
+import void *brk(void *addr);
+import i32 mprotect(void *addr, i64 len, i32 prot);
